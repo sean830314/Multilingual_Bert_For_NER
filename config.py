@@ -40,7 +40,19 @@ def parse():
         "--use_model",
         default="bert-base-multilingual-cased",
         type=str,
-        help="name of use model",
+        help="name of use model, and default is xlm-roberta-base or bert-base-multilingual-cased",
+    )
+    parser.add_argument(
+        "--tokenizer",
+        default="bert-base-multilingual-cased",
+        type=str,
+        help="name of use tokenizer, and default is xlm-roberta-base or bert-base-multilingual-cased",
+    )
+    parser.add_argument(
+        "--learning_rate",
+        type=float,
+        default=1e-5,
+        help="learning rate for train process",
     )
     parser.add_argument(
         "--steps",
