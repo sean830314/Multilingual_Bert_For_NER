@@ -160,8 +160,10 @@ cython_debug/
 #.idea/
 
 #model
-*-multilingual-cased
+*-multilingual-cased*
+*-xlm-roberta*
 
 # other
 .env
 test.ipynb
+wandb
